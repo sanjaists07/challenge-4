@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 13px;
+  padding: 30px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background-color: hsl(210, 46%, 95%);
+  position: relative;
+}
+h3 {
+  color: hsl(0, 0%, 81%);
+}
+p {
+  color: hsl(210, 46%, 95%);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+span {
+  color: hsla(0, 0%, 81%, 50%);
+}
+
+img {
+  border: 2px solid hsla(0, 0%, 81%, 50%);
+  border-radius: 50px;
+  display: inline-block;
+  width: 35px;
+}
+
+.testimonial {
+  background-color: HSL(263, 55%, 52%);
+  border-radius: 10px;
+  position: relative;
+  line-height: 1.2;
+  padding: 16px 25px 30px 32px;
+  padding-right: 25px;
+  margin-bottom: 30px;
+  text-align: left;
+  z-index: 3;
+}
+
+.first::before {
+  content: url(images/bg-pattern-quotation.svg);
+  position: absolute;
+  right: 13px;
+  top: 0;
+  z-index: -1;
+}
+
+.profile {
+  display: inline-block;
+  line-height: 1.5;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.quotation {
+  color: hsla(0, 0%, 81%, 70%);
+  font-size: 13px;
+  line-height: 1.5;
+  margin-top: 15px;
+}
+
+.sec {
+  background-color: hsl(217, 19%, 35%);
+}
+
+.four {
+  background-color: hsl(219, 29%, 14%);
+}
+
+.third,
+.five {
+  background-color: hsl(0, 0%, 100%);
+  border-color: hsl(217, 19%, 35%);
+}
+
+.third p,
+.five p {
+  color: hsl(217, 19%, 35%);
+}
+
+.white_bg {
+  color: hsl(217, 19%, 35%);
+}
+
+.white_span {
+  color: hsla(0, 0%, 81%);
+}
+
+.four h3 {
+  color: white;
+}
+
+@media (min-width: 1220px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  section {
+    margin: 100px;
+    width: 1110px;
+    height: 580px;
+    position: relative;
+  }
+  .testimonial {
+    display: inline-block;
+    position: absolute;
+  }
+  .first {
+    width: 51%;
+    margin-bottom: 0;
+  }
+  .sec {
+    width: 22%;
+    top: 0;
+    right: 275px;
+    margin-bottom: 0;
+  }
+  .third {
+    left: 0;
+    bottom: 4%;
+    width: 22%;
+    margin-bottom: 0;
+  }
+  .four {
+    bottom: 4%;
+    margin-bottom: 0;
+    left: 25%;
+    width: 50%;
+  }
+  .five {
+    width: 22%;
+    height: 100%;
+    right: 0;
+  }
+}
